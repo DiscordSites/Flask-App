@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ guild_name }}</title>
+  <link href="https://modesta.alexflipnote.xyz/css/modesta.min.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<section class="fullscreen">
+  <div class="background" style="background-image: url('{{ guild_background }}') no-repeat center center fixed;"></div>
+  <div class="center-object">
+    <section class="me">
+      <img draggable="false" src="{{ guild_icon }}" class="image-title">
+      <h1 class="title">{{ guild_name }}</h1>
+      <span class="undertitle">{{ guild_description }}</span>
+    </section>
+    <div class="buttons">
+      <a href="{{ guild_invite }}" class="btn animation turquoise" target="_blank">Join Us!</a>
+      <a class="btn animation nephritis-flat">{{ guild_membercount }} Members</a>
+    </div>
+  </div>
+</section>
+</body>
+</html>
