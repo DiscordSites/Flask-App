@@ -5,7 +5,7 @@ with open("config.json") as conf:
     config = json.load(conf)
     database = config["database"]
 
-client = MongoClient()
+client = MongoClient(database)
 db = client["discordsites"]
 doc = db["guilds"]
 
