@@ -1,4 +1,9 @@
 from pymongo import MongoClient
+import json
+
+with open("config.json") as conf:
+    config = json.load(conf)
+    database = config["database"]
 
 client = MongoClient()
 db = client["discordsites"]
