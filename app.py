@@ -5,7 +5,7 @@ db = client["discordsites"]
 doc = db["guilds"]
 
 from flask import Flask, render_template, redirect
-application = Flask(__name__)
+application = Flask(__name__, static_url_path="/static")
 application.config["PROPAGATE_EXCEPTIONS"] = True
 
 @application.route("/")
